@@ -3,11 +3,11 @@
 @section('container')
 
 
-<form class="addForm" action="{{ route('storeCategorie') }}" method="POST">
+<form class="addForm" action="{{ route('editCategorie',[$categorieName->id]) }}" method="POST">
     @csrf
     <label for="staticEmail" class="col-sm-2 col-form-label">Name Categorie</label>
     <br>
-    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" name="name">
+    <input class="form-control form-control-lg" type="text" value="{{ $categorieName->name }}"placeholder=".form-control-lg" name="name">
     <br>
     <button type="submit" class="btn btn-success">Save</button>
 </form>

@@ -68,5 +68,8 @@ Route::post('deleteProduct/{id}',[Controller::class,'deleteProduct'])->name('del
 Route::get('editProductPage/{id}',[Controller::class,'editProductPage'])->name('editProductPage');
 
 
+Route::post('editCategorie/{id}',[Controller::class,'editCategorie'])->name('editCategorie');
+Route::post('deleteCategorie/{id}',[Controller::class,'deleteCategorie'])->name('deleteCategorie');
+Route::get('editCategoriePage/{id}',[Controller::class,'editCategoriePage'])->name('editCategoriePage');
 
 
